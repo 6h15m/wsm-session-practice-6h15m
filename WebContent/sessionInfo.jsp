@@ -1,4 +1,4 @@
-<%@ page contentType = "text.html; charset=utf-8" %>
+<%@ page contentType = "text/html; charset=utf-8" %>
 <%@ page session = "true" %>
 <%@ page import = "java.util.Date" %>
 <%@ page import = "java.text.SimpleDateFormat" %>
@@ -8,7 +8,8 @@
 	 new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 %>
 <html>
-<head><title>세션정보</title></head>
+<head><meta charset="UTF-8">
+<title>세션정보</title></head>
 <body>
 세션ID: <%= session.getId() %> <br>
 <%
